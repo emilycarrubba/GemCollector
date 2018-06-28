@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gem Collector</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Gem Collector</h1>
+    </div>
+    <div class="instructions">
+        <h3>Instructions</h3>
+        <ol>
+            <br> Players will be assigned a random number to being the game. The object of the game is to caputre four kinds of gems.</br>
+                <br>
+                <li id="red">Red</li>
+                <li id="black">Black</li>
+                <li id="white">White</li>
+                <li id="blue">Blue</li>
+        </ul>
+            <br>Collect points by capturing gems. Click the gems to discover their value. Capture enough gems to match the assigned number. Capture more gems than the assigned number and lose the game.</br>
+            <br>
+            <!--WHEN THE GAME STARTS GEM VALUES CHANGE-->
+        </ol>
+    </div>
+    <div class="numberToMatch">
+        <h2>Gem Goal:
+            <span id= "randomNumber"></span>
+        </h2>
+    </div>
+    <div class="winsAndLosses">
+        <h2>Wins:
+            <span id="numberWins"></span>
+            <br>
+            Losses:
+            <span id="numberLosses"></span>
+        </h2>
+    </div>
+    <div class="gems">
+        <div class="GemContainer" id="one">
+            <img class="GemImage" src="./assets/images/redgem.png" alt="">
+        </div>
+        <div class="GemContainer" id="two">
+            <img class="GemImage" src="./assets/images/blackgem.jpg" alt="">
+            
+        </div>
+        <div class="GemContainer" id="three">
+            <img class="GemImage" src="./assets/images/whitegem.jpg" alt="">
+            
+        </div>
+        <div class="GemContainer" id="four">
+            <img class="GemImage" src="./assets/images/bluegem.png" alt="">
+        </div>
+    </div>
+    <div class="userTotal">
+        <h2>Total score is:
+            <span id="finalTotal"></span>
+        </h2>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/javascript.js">
+    </script>
+</body>
+</html>
